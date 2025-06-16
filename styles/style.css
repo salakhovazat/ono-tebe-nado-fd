@@ -1,1 +1,255 @@
-/* место для вашего кода */
+header {
+  display: grid;
+  grid-template-columns: 1fr min-content 1fr;
+  align-items: center;
+  margin: 50px 50px 100px 50px;
+  position: relative;
+}
+
+ul {
+  list-style: circle;
+  display: flex;
+  flex-direction: row;
+  gap: 30px;
+}
+
+.header__link_active {
+  list-style: none;
+}
+
+.header__menu {
+  height: 22px;
+}
+
+.header_logo {
+  width: 130px;
+  height: 105px;
+  display: block;
+}
+
+.header_address {
+  max-width: 240px;
+  justify-self: end;
+  padding-right: 55px;  
+}
+
+.cover {
+  background-image: url(../images/cover.jpg);
+  height: 757px;
+  background-position: center;
+  background-size: cover;
+  position: relative;
+  text-transform: uppercase;
+}
+
+.overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(0,0,0,0.4);
+  z-index: 1;
+}
+
+.cover_title {
+  position: relative;
+  color: #FFFFFF;
+  padding: 165px 50px 150px 50px;
+  font-size: 100px;
+  letter-spacing: 25px;
+  z-index: 2;
+}
+
+.aligned-text_center {
+  display: block;
+  text-align: center;
+}
+
+.aligned-text_right {
+  display: block;
+  text-align: right;
+}
+
+.cover__description {
+  position: relative;
+  color: #FFFFFF;
+  display: grid;
+  grid-template-columns: 1fr min-content;
+  align-items: center;
+  margin-left: 50px;
+  margin-right: 50px;
+  z-index: 2;
+}
+
+.cover__description-text {
+  word-spacing: 20px;
+  font-size: 22px;
+}
+
+.bet-button {
+  background: transparent;
+  border-color: #FFFFFF;
+  color: #FFFFFF;
+  height: 51px;
+  width: 256px;
+  text-transform: uppercase;
+  font-size : 22px;
+}
+
+.lots {
+ padding-top: 180px;
+}
+
+.lots__heading {
+  font-size: 40px;
+  width: 700px;
+  text-transform: uppercase;
+  padding-left: 40px;
+}
+
+.lots__card-list {
+  list-style: none;
+  padding-top: 27px;
+}
+
+.lots__card-list-item {
+  width: 334px;
+  min-height: 596px;
+  display: flex;
+  gap: 5px;
+}
+
+.card-link {
+  height: 100%;
+  text-decoration: none;
+  display: block;
+}
+
+.card {
+  display: flex;
+  height: 100%;
+  flex-direction: column;
+  justify-content: space-between;
+  position: relative;  
+}
+
+.card_type_film {
+  background-image: url(../images/card-lot-01.jpg);
+  background-position: center;
+  background-size: cover;
+}
+
+.card_type_book {
+  background-image: url(../images/card-lot-02.jpg);
+  background-position: center;
+  background-size: cover;
+}
+
+.card_type_picture {
+  background-image: url(../images/card-lot-03.jpg);
+  background-position: center;
+  background-size: cover;
+}
+
+.card__title {
+  font-size: 22px;
+  color: #FFFFFF;
+  text-transform: uppercase;
+  text-decoration: underline;
+  padding: 48px 40px 0 40px;
+  position: relative;
+  z-index: 2;
+}
+
+.card__text {
+  font-size: 20px;
+  padding: 0 40px 48px 40px;
+  color: #FFFFFF;
+  position: relative;
+  z-index: 2;
+}
+
+.lots__look-more-link {
+  display: block;
+  padding: 30px 0 0 40px;
+  font-size: 20px;
+}
+
+.about {
+  display: grid;
+  grid-template-columns: 334px 730px;
+  grid-template-rows: 1fr 1fr;
+  padding-top: 120px;
+}
+
+.about__logo {
+  border-radius: 50%;
+  background-color: black;
+  width: 240px;
+  height: 240px;
+  justify-self: center;
+  align-self: center;
+  display: flex;
+}
+
+.about__logo-image {
+  height: 114px;
+  width: 148px;
+  margin: auto;
+}
+
+.about__title {  
+  align-self: center;
+}
+
+.about__heading {
+  font-size: 40px;
+  text-transform: uppercase;
+  padding-left: 24px;
+}
+
+.about__text {
+  grid-column: 2 / 3;
+  grid-row: 2 / 3;
+  font-size: 20px;
+  padding-left: 24px;
+
+}
+
+.about__text-first {
+  padding-bottom: 24px;
+}
+
+.footer {
+  padding-top: 143px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  align-items: center;
+  position: relative;
+}
+
+.footer_address {
+  justify-self: center;
+  font-size: 18px;
+}
+
+.footer__menu {
+  justify-self: center;
+}
+
+.footer__menu-list {
+  display: inline-block;
+  list-style-type: none;
+  text-align: center;
+  font-size: 18px;
+
+}
+
+.footer__social-list {
+  list-style-type: none;
+  justify-self: center;
+}
+
+.footer__social-icon {
+  height: 48px;
+  width: 48px;
+}
+
