@@ -260,12 +260,12 @@ header {
 }
 
 .footer {
-  padding-top: 143px;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   align-items: center;
   position: relative;
   padding-top: 170px;
+  padding-bottom: 150px;
 }
 
 .footer_address {
