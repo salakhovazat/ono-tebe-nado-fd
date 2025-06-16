@@ -1,4 +1,4 @@
-header {
+.header {
   display: grid;
   grid-template-columns: 1fr min-content 1fr;
   align-items: center;
@@ -24,11 +24,7 @@ header {
   text-underline-offset: 4px;
 }
 
-.header__menu {
-  height: 22px;
-}
-
-.header_logo {
+.header__logo {
   width: 138px;
   height: 105px;
   display: block;
@@ -39,17 +35,12 @@ header {
   font-size: 18px;
 }
 
-.number {
+.header__item {
   text-decoration: underline;
   text-underline-offset: 4px;
 }
 
-.email {
-  text-decoration: underline;
-  text-underline-offset: 4px;
-}
-
-.header_address {
+.header__address {
   justify-self: end;
   padding-right: 36px;
   max-width: 240px;
@@ -58,7 +49,7 @@ header {
 
 .cover {
   background-image: url(../images/cover.jpg);
-  height: 757px;
+  min-height: 757px;
   background-position: center;
   background-size: cover;
   position: relative;
@@ -68,11 +59,11 @@ header {
 .overlay {
   position: absolute;
   inset: 0;
-  background: rgba(0,0,0,0.4);
+  background: rgba(0,0,0,0.6);
   z-index: 1;
 }
 
-.cover_title {
+.cover__title {
   position: relative;
   color: #FFFFFF;
   font-size: 100px;
@@ -121,7 +112,7 @@ header {
   background: transparent;
   border-color: #FFFFFF;
   color: #FFFFFF;
-  height: 51px;
+  min-height: 51px;
   width: 256px;
   text-transform: uppercase;
   font-size : 22px;
@@ -143,6 +134,7 @@ header {
   list-style: none;
   padding-top: 27px;
   display: flex;
+  flex-wrap: wrap;
   gap: 25px;
 }
 
@@ -252,11 +244,9 @@ header {
   font-size: 20px;
   padding-left: 25px;
   padding-top: 7px;
-
-}
-
-.about__text-first {
-  padding-bottom: 24px;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
 }
 
 .footer {
@@ -265,15 +255,19 @@ header {
   align-items: center;
   position: relative;
   padding-top: 170px;
-  padding-bottom: 100px;
+  padding-bottom: 82px;
 }
 
-.footer_address {
+.footer__address {
   justify-self: center;
-  font-size: 18px;
   line-height: 24px;
   padding-top: 12px;
   padding-right: 32px;
+}
+
+.footer__item {
+  text-decoration: underline;
+  text-underline-offset: 4px;
 }
 
 .footer__menu {
